@@ -1,0 +1,99 @@
+/* ?=======> nav Box */
+
+.side-bar ul li a {
+  cursor: pointer;
+}
+
+.side-bar ul li {
+  padding: 10px 0px;
+  font-size: 18px;
+}
+.left-bott-icons i {
+  cursor: pointer;
+  padding-right: 10px;
+}
+.close-btn {
+  cursor: pointer;
+}
+
+.nav_Box {
+  background-color: #f1f1f1;
+  left: 0;
+  height: 100vh;
+  transition: left 500ms;
+  z-index: 99999999;
+}
+.nav_Box ul {
+  color: inherit;
+  list-style: none;
+}
+.gear-icon {
+  height: 100vh;
+  width: 80px;
+  font-size: 25px;
+  position: absolute;
+  top: 0px;
+  right: -65px;
+  color: #0e0606;
+}
+.gear× {
+  cursor: pointer;
+}
+/* !=======> main */
+.item .cardImage:hover img {
+  scale: 1.5;
+  rotate: 20deg;
+  filter: blur(3px);
+}
+
+.cardImage {
+  transition: 1s;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 5px;
+}
+.cardImage img {
+  transition: all 0.5s ease-in-out;
+}
+
+.overlay {
+  background-color: rgba(134, 132, 132, 0.6);
+  position: absolute;
+  padding: 20px;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 1.2s ease-in-out;
+  height: 100%;
+  width: 100%;
+  top: 150%;
+  border-radius: 5px;
+}
+.item:hover .overlay {
+  opacity: 1;
+  visibility: visible;
+  top: 0;
+}
+
+.overlay .title {
+  font-size: 40px;
+  font-weight: 600;
+  text-align: center;
+}
+.overlay .date {
+  font-style: italic;
+}
+.overlay .desc {
+  color: #ededed;
+  user-select: text;
+}
+.overlay .vote {
+  font-size: 20px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid rgb(128, 73, 0);
+  padding: 10px;
+  border-radius: 50%;
+}

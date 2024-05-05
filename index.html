@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./images/logo.png" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>MOVIE APP</title>
+  </head>
+
+  <body class="bg-dark">
+
+
+    <!-- ~========> aside -->
+    <aside class="nav_Box d-flex position-fixed">
+      <div
+        class="side-bar bg-dark d-flex flex-column justify-content-between ps-3"
+      >
+        <ul class="list-unstyled  mt-5 text-white fw-normal">
+          <li>
+            <a id="Now_Playing">Now Playing</a></li>
+          <li><a id="Popular"> Popular</a></li>
+          <li><a id="Top_Rated">Top Rated</a></li>
+          <li><a id="Trending"> Trending</a></li>
+          <li><a id="UpComing"> UpComing</a></li>
+          <li><a id="Contact_Us" href="#contact" class="link-underline link-underline-opacity-0 link-light"> Contact Us</a></li>
+        </ul>
+        <div class="left-bott-icons text-white">
+          <i class="fa fa-brands fa-facebook"></i>
+          <i class="fa fa-brands fa-twitter"></i>
+          <i class="fa-solid fa-globe mb-2 fa-md"></i>
+          <p>Copyright @ 2019 All Rights Reserved.</p>
+        </div>
+      </div>
+      <div
+        class="gear-icon d-flex flex-column justify-content-between align-items-center bg-white"
+      >
+        <div class="icons-top d-flex flex-column justify-content-between p-3">
+          <div class="icon-logo mt-5 mb-5">
+            <img src="./images/logo.png" alt="" class="side-logo img-fluid" />
+          </div>
+          <div class="fs-2 fw-bold mt-5 ms-2 gear×">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+        </div>
+        <div
+          class="icons-bottom ps-3 d-flex flex-column justify-content-between mb-5"
+        >
+          <i class="fa-solid fa-globe mb-2 fa-md text-dark pt-3"></i>
+          <i class="fa-solid fa-share-nodes fa-md text-dark pt-3"></i>
+        </div>
+      </div>
+    </aside>
+
+      <*-- ~========> search -->
+      <section >
+        <input id="search" class="form-control w-50 mx-auto bg-transparent rounded-pill text-white shadow-none border-white px-3 mb-5"></input>
+      </section>
+  
+    <!-- ~========> main -->
+
+    <main>
+      <section>
+        <div class="container mb-3">
+          <div class="row movies-container g-4"></div>
+        </div>
+      </section>
+    </main>
+    <!-- ~========> contact -->
+
+    <section id="contact" class="pt-5  overflow-auto bg-info">
+      <div class="container">
+        <div class="row g-5 mt-4">
+          <div class="col-md-6">
+            <div id="nameAlert" class="alert alert-warning w-100 mt-2 d-none">
+              Incorrect letters and numbers
+            </div>
+
+            <input
+              type="text"
+              class="form-control bg-transparent text-white"
+              id="nameInput"
+              placeholder="enter your  name"
+            />
+          </div>
+          <div class="col-md-6">
+            <div id="emailAlert" class="alert alert-warning w-100 mt-2 d-none">
+              email is incorrect
+            </div>
+            <input
+              type="text"
+              class="form-control bg-transparent text-dark"
+              id="emailInput"
+              placeholder="enter your  email"
+            />
+          </div>
+          <div class="col-md-6">
+            <div id="mobileAlert" class="alert alert-warning w-100 mt-2 d-none">
+              mobile is incorrect
+            </div>
+            <input
+              type="number"
+              class="form-control bg-transparent text-dark"
+              id="mobileInput"
+              placeholder="enter your  mobile"
+            />
+          </div>
+          <div class="col-md-6">
+            <div id="ageAlert" class="alert alert-warning w-100 mt-2 d-none">
+              age is incorrect
+            </div>
+            <input
+              type="number"
+              class="form-control bg-transparent text-dark"
+              id="ageInput"
+              placeholder="enter your  age"
+            />
+          </div>
+          <div class="col-md-6">
+            <div
+              id="passwordAlert"
+              class="alert alert-warning w-100 mt-2 d-none"
+            >
+              password is incorrect
+            </div>
+            <input
+              type="text"
+              class="form-control bg-transparent text-dark"
+              id="passwordInput"
+              placeholder="enter your  password"
+            />
+          </div>
+          <div class="col-md-6">
+            <div
+              id="repasswordAlert"
+              class="alert alert-warning w-100 mt-2 d-none"
+            >
+              password is incorrect
+            </div>
+            <input
+              type="text"
+              class="form-control bg-transparent text-dark"
+              id="rePasswordInput"
+              placeholder="enter your  repassword"
+            />
+          </div>
+        </div>
+
+        <button
+          id="submitButton"
+          disabled="true"
+          class="btn btn-outline-success btn-block mt-5"
+        >
+          submit
+        </button>
+      </div>
+    </section>
+
+    <
+    <script src="./Js/jquery.js"></script>
+    <script src="./Js/index.js"></script>
+      <script src="./Js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
